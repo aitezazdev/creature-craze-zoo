@@ -1,0 +1,258 @@
+@import url(./universal.css);
+
+#header{
+    height: 100px;
+    background-color: #dbd9d4;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header img{
+    margin: 0 30px;
+    width: 140px;
+    cursor: pointer;
+}
+
+#header ul{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    list-style-type: none;
+    margin: 0 50px;
+    font-size: 18px;
+    font-family: poppins-medium;
+    color: #393936;
+    height: 100%;
+}
+
+#header ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+#header ul li::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #d6622c;
+    transition: width 0.3s ease;
+}
+
+#header ul li:hover::before {
+    width: 100%;
+}
+
+.image{
+    width: 100%;
+    height: 100svh;
+    background-image: url(../images/home-page/childs-with-birds.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+}
+
+.image::after{
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#img-text{
+    margin: 0 100px;
+    width: 40%;
+}
+
+#img-text h1{
+    font-family: ubunto-medium;
+    font-size: 60px;
+    color: #fff;
+}
+
+#img-text p{
+    color: #fff;
+    margin: 30px 0;
+    font-family: poppins-regular;
+}
+
+#animals-classify{
+    min-height: 100vh;
+    padding: 100px 0;
+    background-color: #dbd9d4;
+}
+
+#animals-classify h2{
+    text-align: center;
+    padding: 100px 0;
+    font-family: ubunto-medium;
+    font-size: 45px;
+    color: #183662;
+}
+
+.animals-groups{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-family: poppins-regular;
+}
+
+.animals-groups .content-with-images{
+    width: 30%;
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.animals-groups img {
+    width: 100%;
+    height: auto;
+}
+
+.animals-groups p{
+    text-align: center;
+    margin: 15px 0;
+    color: #393936;
+}
+
+.animals-groups h3{
+    text-align: center;
+    margin: 15px 0;
+    color: #183662;
+    font-size: 25px;
+}
+
+.arr-div{
+    margin: 15px auto;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arr-div:hover .arrow{
+    transform: translateX(5px);
+}
+
+.arr-div .arrow{
+    transition: transform 0.3s ease-in-out;
+    margin: 0 10px;
+}
+
+.arr-div a{
+    text-decoration: none;
+    color: #183662;
+    font-weight: 500;
+}
+
+.arr-div i{
+    color: #183662;
+}
+
+#footer{
+    height: 200px;
+    background-color: #c9c3b4;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rights-reserved{
+    display: flex;
+    width: 48%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 40px;
+    color: black;
+    font-size: 15px;
+    font-family: poppins-regular;
+}
+
+#social-links{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 40px;
+}
+
+#social-links i{
+    font-size: 30px;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#social-links i:hover{ 
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+#social-links a{
+    text-decoration: none;
+}
+
+#whatsapp{
+    color: #25D366;
+    border: 3px solid #25D366;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#insta{
+    color: #983ab4;
+    border: 3px solid #983ab4;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#fb{
+    color: #1877F2;
+    border: 3px solid #1877F2;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#yt{
+    color: #FF0000;
+    border: 3px solid #FF0000;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#mail{
+    color:  #D93025;
+    border: 3px solid #D93025;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
