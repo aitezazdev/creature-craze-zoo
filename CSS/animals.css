@@ -1,6 +1,5 @@
 @import url(./universal.css);
 
-
 #header{
     height: 100px;
     background-color: #dbd9d4;
@@ -39,7 +38,7 @@
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #0d3d85;
+    background-color: #d6622c;
     transition: width 0.3s ease;
 }
 
@@ -52,122 +51,118 @@
     color: #393936;
 }
 
-#free-zoo{
-    background-color: #df5a31;
-    padding: 50px 20px;
-    text-align: center;
+.image{
+    width: 100%;
+    height: 100svh;
+    background-image: url(../images/home-page/childs-with-birds.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+}
+
+.image::after{
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#img-text{
+    margin: 0 100px;
+    width: 40%;
+}
+
+#img-text h1{
+    font-family: ubunto-medium;
+    font-size: 80px;
     color: #fff;
 }
 
-#free-zoo p{
-    text-transform: uppercase;
+#img-text p{
+    color: #fff;
+    margin: 30px 0;
     font-family: poppins-regular;
-}
-
-#free-zoo h1{
-    font-family: caveat-regular;
-    font-size: 100px;
-    margin: 20px 0;
-}
-
-#spring-hrs{
-    width: 60%;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
-#spring-hrs h2{
-    color: #183662;
-    font-size: 40px;
-    font-family: ubunto-medium;
-}
-
-#spring-hrs div{
-    font-family: poppins-regular;
-    margin: 20px 0;
-}
-
-#spring-hrs em{
     font-size: 18px;
-    color: #393936;
-    font-family: poppins-regular;
 }
 
-#prices{
+#animals-classify{
     min-height: 100vh;
+    padding: 100px 0;
     background-color: #dbd9d4;
-    padding: 100px 20px;
 }
 
-
-#prices h2{
+#animals-classify h2{
     text-align: center;
+    padding: 100px 0;
     font-family: ubunto-medium;
     font-size: 45px;
-    color: #2c527b;
+    color: #183662;
 }
 
-#prices > p{
-    text-align: center;
-    font-size: 17px;
-    margin: 20px 0;
+.animals-groups{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     font-family: poppins-regular;
-    color: #000;
 }
 
-.prices-cont{
-    width: 70%;
+.animals-groups .content-with-images{
+    width: 30%;
     background-color: #fff;
-    margin: 60px auto 20px auto;
-    padding: 40px;
-    font-family: poppins-regular;
-    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
-.prices-cont .icons-div-1, .prices-cont .icons-div-2{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    background-color: #000;
-    height: 30px;
-    width: 30px;
+.animals-groups img {
+    width: 100%;
+    height: auto;
+}
+
+.animals-groups p{
+    text-align: center;
+    margin: 15px 0;
+    color: #393936;
+}
+
+.animals-groups h3{
+    text-align: center;
+    margin: 15px 0;
+    color: #183662;
+    font-size: 25px;
+}
+
+.arr-div{
+    margin: 15px auto;
+    width: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
     cursor: pointer;
 }
 
-.prices-cont i{
-    color: white;
-    rotate: 90deg;
-    transition: transform 0.3s ease;
+.arr-div:hover .arrow{
+    transform: translateX(5px);
 }
 
-.prices-cont > p{
-    font-size: 22px;
-    color: #2c527b;
-    font-weight: bold;
+.arr-div .arrow{
+    transition: transform 0.3s ease-in-out;
+    margin: 0 10px;
 }
 
-.prices-cont .toggle-1, .prices-cont .toggle-2 {
-    margin: 20px 0;
+.arr-div a{
+    text-decoration: none;
+    color: #183662;
+    font-weight: 500;
 }
 
-.prices-cont .toggle-1 > p, .prices-cont .toggle-2 > p{
-    font-size: 17px;
-    font-family: poppins-regular;
-    color: #000;
-    margin: 5px 0;
-}
-
-
-.hidden {
-    display: none;
-}
-
-.prices-cont i.rotated {
-    transform: rotate(-180deg);
+.arr-div i{
+    color: #183662;
 }
 
 #footer{

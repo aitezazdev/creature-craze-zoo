@@ -1,6 +1,5 @@
 @import url(./universal.css);
 
-
 #header{
     height: 100px;
     background-color: #dbd9d4;
@@ -39,7 +38,7 @@
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #0d3d85;
+    background-color: #d6622c;
     transition: width 0.3s ease;
 }
 
@@ -52,122 +51,78 @@
     color: #393936;
 }
 
-#free-zoo{
-    background-color: #df5a31;
-    padding: 50px 20px;
-    text-align: center;
-    color: #fff;
+.image{
+    width: 100%;
+    height: 100svh;
+    background-image: url(../images/our-work/institute-of-medicine.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
 }
 
-#free-zoo p{
-    text-transform: uppercase;
-    font-family: poppins-regular;
+.image::after{
+    content: " ";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.3;
 }
 
-#free-zoo h1{
-    font-family: caveat-regular;
-    font-size: 100px;
-    margin: 20px 0;
-}
-
-#spring-hrs{
-    width: 60%;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
-#spring-hrs h2{
-    color: #183662;
-    font-size: 40px;
-    font-family: ubunto-medium;
-}
-
-#spring-hrs div{
-    font-family: poppins-regular;
-    margin: 20px 0;
-}
-
-#spring-hrs em{
-    font-size: 18px;
-    color: #393936;
-    font-family: poppins-regular;
-}
-
-#prices{
-    min-height: 100vh;
-    background-color: #dbd9d4;
-    padding: 100px 20px;
-}
-
-
-#prices h2{
-    text-align: center;
-    font-family: ubunto-medium;
-    font-size: 45px;
-    color: #2c527b;
-}
-
-#prices > p{
-    text-align: center;
-    font-size: 17px;
-    margin: 20px 0;
-    font-family: poppins-regular;
-    color: #000;
-}
-
-.prices-cont{
-    width: 70%;
-    background-color: #fff;
-    margin: 60px auto 20px auto;
-    padding: 40px;
-    font-family: poppins-regular;
+#parking-location{
+    height: 55vh;
+    width: 100%;
+    background-color: #fbf4f4;
     position: relative;
 }
 
-.prices-cont .icons-div-1, .prices-cont .icons-div-2{
+#parking-location-text{
     position: absolute;
-    right: 20px;
-    top: 20px;
-    background-color: #000;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    cursor: pointer;
+    height: 100%;
+    width: 80%;
+    background-color: #fbf4f4;
+    top: -100px;
+    left: 10%;
+    padding-top: 50px;
 }
 
-.prices-cont i{
-    color: white;
-    rotate: 90deg;
-    transition: transform 0.3s ease;
+#parking-location h1{
+    text-align: center;
+    font-family: caveat-regular;
+    font-size: 90px;
+    color: #fff;
+    color: #304c76;
 }
 
-.prices-cont > p{
-    font-size: 22px;
-    color: #2c527b;
-    font-weight: bold;
-}
-
-.prices-cont .toggle-1, .prices-cont .toggle-2 {
-    margin: 20px 0;
-}
-
-.prices-cont .toggle-1 > p, .prices-cont .toggle-2 > p{
-    font-size: 17px;
+#parking-location p{
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    font-size: 18px;
     font-family: poppins-regular;
     color: #000;
-    margin: 5px 0;
 }
 
-
-.hidden {
-    display: none;
+#medicine{
+    padding: 100px 20px;
+    width: 70%;
+    margin: 0 auto;
+    font-family: poppins-regular;
 }
 
-.prices-cont i.rotated {
-    transform: rotate(-180deg);
+#medicine h2{
+    font-size: 35px;
+    color: #304c76;
+}
+
+#medicine p{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 18px;
+    color: #393936;
 }
 
 #footer{

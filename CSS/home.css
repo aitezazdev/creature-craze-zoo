@@ -35,7 +35,6 @@ body video{
     margin: 0 50px;
     font-size: 18px;
     font-family: poppins-medium;
-    color: #393936;
     height: 100%;
 }
 
@@ -58,6 +57,11 @@ body video{
     width: 100%;
 }
 
+#header a{
+    text-decoration: none;
+    color: #393936;
+}
+
 #know-and-go{
     min-height: 100vh;
     width: 100%;
@@ -69,10 +73,11 @@ body video{
 
 #go-text{
     width: 35%;
-    height: 110vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 0 0 0;
 }
 
 #go-text p{
@@ -104,7 +109,7 @@ body video{
 .map-image img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .map-image-text{
@@ -179,7 +184,7 @@ body video{
 
 #grid-images p{
     text-align: center;
-    margin: 15px 0;
+    margin: 10px 0 30px 0;
     color: #393936;
 }
 
