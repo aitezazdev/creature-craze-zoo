@@ -72,14 +72,14 @@
     opacity: 0.3;
 }
 
-#parking-location{
+#medicine-div{
     height: 55vh;
     width: 100%;
     background-color: #fbf4f4;
     position: relative;
 }
 
-#parking-location-text{
+#text{
     position: absolute;
     height: 100%;
     width: 80%;
@@ -89,7 +89,7 @@
     padding-top: 50px;
 }
 
-#parking-location h1{
+#medicine-div h1{
     text-align: center;
     font-family: caveat-regular;
     font-size: 90px;
@@ -97,7 +97,7 @@
     color: #304c76;
 }
 
-#parking-location p{
+#medicine-div p{
     text-align: center;
     width: 90%;
     margin: 20px auto;
