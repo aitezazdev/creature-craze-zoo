@@ -1,12 +1,14 @@
 @import url(./universal.css);
 
 #header{
-    height: 100px;
+    height: 80px;
     background-color: #dbd9d4;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
 }
 
 #header img{

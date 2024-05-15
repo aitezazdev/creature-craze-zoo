@@ -13,12 +13,14 @@ body video{
 }
 
 #header{
-    height: 100px;
+    height: 80px;
     background-color: #dbd9d4;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
 }
 
 #header img{
@@ -49,7 +51,7 @@ body video{
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #d6622c;
+    background-color: #bd6b42;
     transition: width 0.3s ease;
 }
 
