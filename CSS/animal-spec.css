@@ -53,13 +53,14 @@
 }
 
 #ampi-text-div{
+    padding-top: 60px;
     width: 100%;
     background-color: #fff;
 }
 
 #text{
     padding: 50px 40px;
-    width: 60%;
+    width: 70%;
 }
 
 #text h1{
